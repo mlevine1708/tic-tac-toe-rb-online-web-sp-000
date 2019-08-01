@@ -91,18 +91,9 @@ def winner(board)
 end
 
 def play(board)
-   until over?(board)
-      turn(board)
-   end
-   inputs = get_inputs
-   return false if !inputs
-   update_board(inputs)
-   print_board
-   if won?(board)
-      winner(board) == "X" || winner(board) == "O"
-      puts "Congratulations #{winner(board)}!"
-   elsif draw?(board)
-      puts "Cat's Game!"
-   end
- end 
-end
+  turn(board) until over?(board)
+  if won?(board)
+    puts "Congratulations #{winner(board)}!"
+  elsif draw?(board)
+    puts "Cat's Game!"
+  end

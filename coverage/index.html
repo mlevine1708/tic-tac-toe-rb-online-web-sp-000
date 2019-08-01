@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-08-01T21:32:45+00:00">2019-08-01T21:32:45+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-08-01T21:39:12+00:00">2019-08-01T21:39:12+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -53,7 +53,7 @@
       <tr>
         <td class="strong"><a href="#92ebe6e6e5cd556e1b3de0af2e1c6e30e3f6711a" class="src_link" title="lib/tic_tac_toe.rb">lib/tic_tac_toe.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>108</td>
+        <td>99</td>
         <td>0</td>
         <td>0</td>
         <td>0</td>
@@ -651,91 +651,37 @@
         <li class="never" data-hits="" data-linenumber="94">
           
           
-          <code class="ruby">   until over?(board)</code>
+          <code class="ruby">  turn(board) until over?(board)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="95">
           
           
-          <code class="ruby">      turn(board)</code>
+          <code class="ruby">  if won?(board)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="96">
           
           
-          <code class="ruby">   end</code>
+          <code class="ruby">    puts &quot;Congratulations #{winner(board)}!&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="97">
           
           
-          <code class="ruby">   inputs = get_inputs</code>
+          <code class="ruby">  elsif draw?(board)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="98">
           
           
-          <code class="ruby">   return false if !inputs</code>
+          <code class="ruby">    puts &quot;Cat&#39;s Game!&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="99">
           
           
-          <code class="ruby">   update_board(inputs)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="100">
-          
-          
-          <code class="ruby">   print_board</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="101">
-          
-          
-          <code class="ruby">   if won?(board)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="102">
-          
-          
-          <code class="ruby">      winner(board) == &quot;X&quot; || winner(board) == &quot;O&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="103">
-          
-          
-          <code class="ruby">      puts &quot;Congratulations #{winner(board)}!&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="104">
-          
-          
-          <code class="ruby">   elsif draw?(board)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="105">
-          
-          
-          <code class="ruby">      puts &quot;Cat&#39;s Game!&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="106">
-          
-          
-          <code class="ruby">   end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="107">
-          
-          
-          <code class="ruby"> end </code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="108">
-          
-          
-          <code class="ruby">end</code>
+          <code class="ruby">  end</code>
         </li>
       
     </ol>
